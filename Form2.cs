@@ -169,25 +169,5 @@ namespace NeuralNetworks
             double output = nn.getOuputData(0);
             textBox5.Text = (output >= 0.5) ? "1" : "0";
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            nn.setInputs(0, Convert.ToDouble(textBox1.Text));
-            nn.setInputs(1, Convert.ToDouble(textBox2.Text));
-            nn.setInputs(2, Convert.ToDouble(textBox3.Text));
-            nn.setInputs(3, Convert.ToDouble(textBox4.Text));
-
-            nn.run();
-
-            // textBox5.Text = "" + nn.getOuputData(0);
-
-            double output = nn.getOuputData(0);
-            textBox5.Text = (output >= 0.5) ? "1" : "0";
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
